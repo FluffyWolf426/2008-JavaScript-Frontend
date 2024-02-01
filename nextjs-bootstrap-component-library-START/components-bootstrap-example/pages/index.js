@@ -1,17 +1,14 @@
-import Image from "next/image";
-import { Inter } from "next/font/google";
-
-const inter = Inter({ subsets: ["latin"] });
+import Container from "react-bootstrap/Container";
+import Row from "react-bootstrap/Row";
+import Col from "react-bootstrap/Col";
 
 export default function Home() {
   return (
     <main>
       <Container>
-        <h1>Our Demo using bootstrap</h1>
         <Row>
-          <Col>
-            <h4>Available Component libraries</h4>
-          </Col>
+          <Col>1 of 2</Col>
+          <Col>2 of 2</Col>
         </Row>
       </Container>
     </main>
