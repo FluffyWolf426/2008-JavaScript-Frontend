@@ -1,4 +1,4 @@
-import { useEffect, useState } from 'react';
+import { useState } from 'react';
 
 import Box from '@mui/material/Box';
 import Button from '@mui/material/Button';
@@ -15,13 +15,6 @@ export default function Home() {
   // state for the application.
   const [reviews, setReviews] = useState([])
 
-  useEffect(() =>{
-loadReviews()
-  }, [])
-
-  useEffect(() =>{
-    loadReviews()
-      }, [reviews])
   const loadReviews = async () => {
     // fetch from the backend end.
     const reviewData = await getReviews()
